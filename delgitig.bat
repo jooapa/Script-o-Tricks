@@ -26,5 +26,7 @@ set /p delgitig=
 if %delgitig%==y (
     git clean -xdf
 ) else (
-    echo NONONO
+    git reset --soft HEAD~1
+    git reset
+    ECHO nothing deleted
 )
