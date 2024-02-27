@@ -9,5 +9,5 @@ if [ -f "$CURDIR/$1" ]; then
     echo "creating a symbolic link to /usr/local/bin"
     sudo ln -s "$CURDIR/$1" /usr/local/bin
 else
-    echo "No such file found"
+    echo "No such file found: '$1'"
 fi
